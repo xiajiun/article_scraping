@@ -30,7 +30,7 @@ def login_to_gartner(driver):
         # Scroll to the username field to ensure it is in view
         driver.execute_script("arguments[0].scrollIntoView();", username_field)
 
-        username_field.send_keys("yunjura@radisentech.com")  # Replace with your actual username
+        username_field.send_keys("username")  # Replace with your actual username
 
         # Wait for the password field to be present and visible
         password_field = WebDriverWait(driver, 30).until(
@@ -39,7 +39,7 @@ def login_to_gartner(driver):
         # Scroll to the password field to ensure it is in view
         driver.execute_script("arguments[0].scrollIntoView();", password_field)
 
-        password_field.send_keys("radisen@14")  # Replace with your actual password
+        password_field.send_keys("password")  # Replace with your actual password
 
         # Wait for the login button to be clickable
         login_button = WebDriverWait(driver, 30).until(
